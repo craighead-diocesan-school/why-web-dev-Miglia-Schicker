@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Your website</title>
@@ -29,75 +29,75 @@
     </main>
 
     <footer>&copy; Miglia Schicker 2024</footer>
+
+    <style>
+      body {
+        display: grid;
+        grid:
+          " h    h    h  " 3em
+          " n    m    .  " auto
+          " f    f    f  " 5em
+          / 1fr 5fr 1fr;
+      }
+
+      header {
+        grid-area: h;
+      }
+      nav {
+        grid-area: n;
+      }
+      main {
+        grid-area: m;
+      }
+      footer {
+        grid-area: f;
+      }
+
+      nav {
+        margin-top: 1em;
+      }
+
+      main {
+        margin-left: 1em;
+      }
+
+      * {
+        font-family: sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        background-color: rgb(195, 211, 225);
+        text-shadow: 2px 2px white;
+      }
+
+      h1:hover {
+        background-color: rgb(145, 203, 254);
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        border-radius: 0.5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+      }
+
+      a:hover {
+        color: white;
+        background: black;
+      }
+
+      img {
+        width: 10rem;
+      }
+
+      footer {
+        background-color: lightgrey;
+        padding: 0.5rem;
+        text-align: center;
+      }
+    </style>
   </body>
-
-  <style>
-    body {
-      display: grid;
-      grid:
-        " h    h    h  " 3em
-        " n    m    .  " auto
-        " f    f    f  " 5em
-        / 1fr 5fr 1fr;
-    }
-
-    header {
-      grid-area: h;
-    }
-    nav {
-      grid-area: n;
-    }
-    main {
-      grid-area: m;
-    }
-    footer {
-      grid-area: f;
-    }
-
-    nav {
-      margin-top: 1em;
-    }
-
-    main {
-      margin-left: 1em;
-    }
-
-    * {
-      font-family: sans-serif;
-    }
-
-    h1 {
-      text-align: center;
-      background-color: rgb(195, 211, 225);
-      text-shadow: 2px 2px white;
-    }
-
-    h1:hover {
-      background-color: rgb(145, 203, 254);
-    }
-
-    a {
-      text-decoration: none;
-      color: black;
-      border: 1px solid black;
-      border-radius: 0.5em;
-      padding-left: 0.5em;
-      padding-right: 0.5em;
-    }
-
-    a:hover {
-      color: white;
-      background: black;
-    }
-
-    img {
-      width: 10rem;
-    }
-
-    footer {
-      background-color: lightgrey;
-      padding: 0.5rem;
-      text-align: center;
-    }
-  </style>
 </html>
