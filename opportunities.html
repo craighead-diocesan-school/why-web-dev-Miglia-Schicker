@@ -34,7 +34,7 @@
       body {
         display: grid;
         grid:
-          " h    h    h  " 3em
+          " h    h    h  " 10em
           " n    m    .  " auto
           " f    f    f  " 5em
           / 1fr 5fr 1fr;
@@ -42,24 +42,33 @@
 
       header {
         grid-area: h;
+        background-color: rgb(195, 211, 225);
       }
+
+      header:hover {
+        background-color: rgb(145, 203, 254);
+      }
+
       nav {
         grid-area: n;
       }
+
       main {
         grid-area: m;
+        margin-left: 1.5em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
       }
+
       footer {
         grid-area: f;
+        background-color: lightgrey;
+        padding: 5rem;
+        text-align: center;
       }
 
-      nav {
-        margin-top: 1em;
-      }
-
-      main {
-        padding: 3rem;
-        margin-left: 1em;
+      body {
+        margin: 0em;
       }
 
       * {
@@ -67,13 +76,9 @@
       }
 
       h1 {
+        padding: 2rem;
         text-align: center;
-        background-color: rgb(195, 211, 225);
         text-shadow: 2px 2px white;
-      }
-
-      h1:hover {
-        background-color: rgb(145, 203, 254);
       }
 
       a {
@@ -94,12 +99,6 @@
 
       img {
         width: 10rem;
-      }
-
-      footer {
-        background-color: lightgrey;
-        padding: 0.5rem;
-        text-align: center;
       }
     </style>
   </body>
