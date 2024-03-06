@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>Your website</title>
-    <link rel="icon" href="favicon(1).ico" />
+    <link rel="icon" href="favicon (1).ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@400..900&family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
   </head>
 
   <body>
@@ -32,79 +36,99 @@
     <footer>&copy; Miglia Schicker 2024</footer>
 
     <style>
-      body {
-        display: grid;
-        grid:
-          " h    h    h  " 20vh
-          " n    m    .  " 60vh
-          " f    f    f  " 20vh
-          / 1fr 5fr 1fr;
+          body {
+            display: grid;
+            grid:
+              " h    h    h  " 20vh
+              " n    m    .  " 60vh
+              " f    f    f  " 20vh
+              / 1fr 5fr 1fr;
+          }
+
+          header {
+            grid-area: h;
+            background-color: rgb(195, 211, 225);
+          }
+
+          header:hover {
+            background-color: rgb(145, 203, 254);
+          }
+
+          nav {
+            grid-area: n;
+          }
+
+          main {
+            grid-area: m;
+            margin-left: 1.5em;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+          }
+
+          footer {
+            grid-area: f;
+            background-color: lightgrey;
+            padding: 5rem;
+            text-align: center;
+          }
+
+          body {
+            margin: 0em;
+          }
+
+          * {
+            font-family: serif;
+          }
+
+          h1 {
+            padding: 2rem;
+            text-align: center;
+            text-shadow: 2px 2px white;
+
+            .abril-fatface-regular
+            font-family: "Abril Fatface", serif;
+            font-weight: 1000;
+            font-style: normal;
+          }
+
+          a {
+            margin: 0.5rem;
+            display: block;
+            text-decoration: none;
+            color: black;
+            border: 1px solid black;
+            border-radius: 0.5em;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+          }
+
+          a:hover {
+            color: white;
+            background: black;
+          }
+
+          .active {
+            color: white;
+            background-color: black;
+          }
+
+          img {
+            width: 10rem;
+          }
+
+          p{
+
+      font-family: "Cinzel", serif;
+      font-optical-sizing: auto;
+      font-weight: bold;
+      font-style: normal;
       }
 
-      header {
-        grid-area: h;
-        background-color: rgb(195, 211, 225);
-      }
-
-      header:hover {
-        background-color: rgb(145, 203, 254);
-      }
-
-      nav {
-        grid-area: n;
-      }
-
-      main {
-        grid-area: m;
-        margin-left: 1.5em;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-      }
-
-      footer {
-        grid-area: f;
-        background-color: lightgrey;
-        padding: 5rem;
-        text-align: center;
-      }
-
-      body {
-        margin: 0em;
-      }
-
-      * {
-        font-family: sans-serif;
-      }
-
-      h1 {
-        padding: 2rem;
-        text-align: center;
-        text-shadow: 2px 2px white;
-      }
-
-      a {
-        margin: 0.5rem;
-        display: block;
-        text-decoration: none;
-        color: black;
-        border: 1px solid black;
-        border-radius: 0.5em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-      }
-
-      a:hover {
-        color: white;
-        background: black;
-      }
-
-      .active {
-        color: white;
-        background-color: black;
-      }
-
-      img {
-        width: 10rem;
+      li{
+        font-family: "Faustina", serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
       }
     </style>
   </body>
