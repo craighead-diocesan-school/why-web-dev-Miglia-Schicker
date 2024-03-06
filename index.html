@@ -16,7 +16,10 @@
     </header>
 
     <nav>
-      <a class="active" href="index.html"> Home </a>
+      <a href="index.html">
+        <img src="icons8-home-64.png" />
+        Home
+      </a>
       <a href="opportunities.html"> Web Dev Opportunities </a>
       <a href="other-careers.html"> Other Coding Careers </a>
     </nav>
@@ -30,7 +33,8 @@
         <li>You can build useful applications to make money, help others, or just make your own life easier.</li>
         <li>Web dev has loads of transferrable skills to other areas, from project management to marketing to accounting to entrepeneurship.</li>
       </ul>
-      <img src="html-logo.svg" alt="html html-logo" />
+
+      <img class="miglias-big-photo" src="html-logo.svg" alt="html html-logo" />
     </main>
 
     <footer>&copy; Miglia Schicker 2024</footer>
@@ -92,8 +96,10 @@
           }
 
           a {
+            align-items: center;
+            height: 50px;
+            display: flex;
             margin: 0.5rem;
-            display: block;
             text-decoration: none;
             color: black;
             border: 1px solid black;
@@ -113,8 +119,18 @@
           }
 
           img {
+            width: 25px;
+            margin-bottom: 5px;
+            margin-right: 5px;
+          }
+
+          .miglias-big-photo {
             width: 10rem;
           }
+
+
+
+
 
           p{
 
